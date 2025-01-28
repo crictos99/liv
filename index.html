@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FanCode by @crictos99</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      color: #fff; 
+      text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    /* Header Box with Glowing Effect */
+    .header-box {
+      display: inline-block;
+      padding: 10px 20px; /* Reduced padding */
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+      margin-bottom: 20px;
+      text-align: center;
+      animation: glow 1.5s ease-in-out infinite alternate;
+    }
+
+    .header-box h1 {
+      font-size: 1.5em; /* Reduced font size */
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #ff1e56, 0 0 20px #ff4b2b, 0 0 30px #ff416c;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
+      }
+      100% {
+        box-shadow: 0 0 25px #ff1e56, 0 0 40px #ff416c;
+      }
+    }
+
+    /* Telegram Button */
+    .telegram-box {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .telegram-button {
+      display: block;
+      padding: 12px 20px;
+      background-color: #0088cc;
+      color: white;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .telegram-button:hover {
+      background-color: #0077b5;
+      transform: scale(1.05);
+    }
+
+    /* Matches Grid */
+    .matches-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    /* Match Card */
+    .match-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .match-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .match-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    /* Updated Logo Box */
+    .logo-box {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .match-details {
+      padding: 15px;
+    }
+
+    .match-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .match-status {
+      font-size: 1em;
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .live {
+      background: #ff1e56;
+      color: #fff;
+    }
+
+    .upcoming {
+      background: #ffd700;
+      color: #000;
+    }
+
+    .match-time {
+      font-size: 0.9em;
+      color: #eee;
+    }
+
+    /* Loader Animation */
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+    }
+
+    .loader div {
+      width: 40px;
+      height: 40px;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Glowing Header -->
+    <div class="header-box">
+      <h1>FanCode Live by @crictos99</h1>
+    </div>
+
+    <!-- Telegram Button -->
+    <div class="telegram-box">
+      <a href="https://t.me/crictos99" class="telegram-button" target="_blank">Join Our Telegram</a>
+    </div>
+
+    <!-- Loader and Matches Grid -->
+    <div id="loader" class="loader"><div></div></div>
+    <div id="matches" class="matches-grid" style="display: none;"></div>
+  </div>
+
+  <script>
+    const apiUrl = "https://raw.githubusercontent.com/abid58b/FanCodePlaylist/refs/heads/main/fancode.json";
+
+    async function fetchMatches() {
+      try {
+        document.getElementById("loader").style.display = "flex";
+        document.getElementById("matches").style.display = "none";
+
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        const matches = data.matches;
+        const matchesContainer = document.getElementById("matches");
+
+        matchesContainer.innerHTML = "";
+
+        matches.forEach((match) => {
+          const matchCard = document.createElement("div");
+          matchCard.className = "match-card";
+
+          let statusClass = match.status.toLowerCase() === "live" ? "live" : "upcoming";
+
+          matchCard.innerHTML = `
+            <a href="https://shz.al/xFc7.html/?videoUrl=${encodeURIComponent(match.adfree_url)}" target="_blank">
+              <div class="logo-box">
+                <img src="${match.src}" alt="${match.title}">
+              </div>
+              <div class="match-details">
+                <div class="match-title">${match.title}</div>
+                <div class="match-status ${statusClass}">${match.status}</div>
+                <div class="match-time">${match.startTime}</div>
+              </div>
+            </a>
+          `;
+
+          matchesContainer.appendChild(matchCard);
+        });
+
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("matches").style.display = "grid";
+
+      } catch (error) {
+        console.error("Error fetching match data:", error);
+      }
+    }
+
+    setInterval(fetchMatches, 200000);
+    fetchMatches();
+  </script>
+</body>
+</html>
