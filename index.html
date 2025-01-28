@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FanCode by @crictos99</title>
+  <title>SonyLiv Live by @crictos99</title>
   <style>
-    /* General Styles */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #ff416c, #ff4b2b);
-      color: #fff; 
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: #fff;
       text-align: center;
+      user-select: none; /* Prevent text selection */
     }
 
     .container {
@@ -21,80 +21,58 @@
       margin: 30px auto;
     }
 
-    /* Header Box with Glowing Effect */
     .header-box {
       display: inline-block;
-      padding: 10px 20px; /* Reduced padding */
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-      margin-bottom: 20px;
+      padding: 20px 40px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      margin-bottom: 30px;
       text-align: center;
-      animation: glow 1.5s ease-in-out infinite alternate;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
     .header-box h1 {
-      font-size: 1.5em; /* Reduced font size */
+      font-size: 2em;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px #ff1e56, 0 0 20px #ff4b2b, 0 0 30px #ff416c;
+      text-shadow: 0 0 10px #000, 0 0 20px #000; /* Changed glow color to black */
     }
 
-    @keyframes glow {
-      0% {
-        box-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
-      }
-      100% {
-        box-shadow: 0 0 25px #ff1e56, 0 0 40px #ff416c;
-      }
-    }
-
-    /* Telegram Button */
     .telegram-box {
       display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .telegram-button {
-      display: block;
-      padding: 12px 20px;
+      margin-top: 20px;
+      padding: 10px 30px;
       background-color: #0088cc;
-      color: white;
-      font-size: 1.2em;
+      color: #fff;
       font-weight: bold;
-      border-radius: 8px;
+      border-radius: 15px;
+      cursor: pointer;
       text-decoration: none;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease;
     }
 
-    .telegram-button:hover {
-      background-color: #0077b5;
-      transform: scale(1.05);
+    .telegram-box:hover {
+      background-color: #006fa0;
     }
 
-    /* Matches Grid */
     .matches-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
       justify-content: center;
     }
 
-    /* Match Card */
     .match-card {
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
 
     .match-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
     .match-card a {
@@ -103,55 +81,56 @@
       display: block;
     }
 
-    /* Updated Logo Box */
     .logo-box {
+      position: relative;
       width: 100%;
-      height: 300px;
+      height: 250px;
       overflow: hidden;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     }
 
     .logo-box img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      filter: brightness(0.8);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-box:hover img {
+      filter: brightness(1);
     }
 
     .match-details {
-      padding: 15px;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 
     .match-title {
-      font-size: 1.3em;
+      font-size: 1.4em;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .match-status {
       font-size: 1em;
       font-weight: bold;
-      padding: 5px 10px;
-      border-radius: 5px;
-      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 10px;
       margin-bottom: 10px;
+      display: inline-block;
     }
 
-    .live {
-      background: #ff1e56;
-      color: #fff;
-    }
-
-    .upcoming {
-      background: #ffd700;
-      color: #000;
-    }
+    .live { background: #ff1e56; color: #fff; }
+    .upcoming { background: #ffd700; color: #000; }
 
     .match-time {
       font-size: 0.9em;
-      color: #eee;
+      color: #ddd;
     }
 
-    /* Loader Animation */
     .loader {
       display: flex;
       justify-content: center;
@@ -160,8 +139,8 @@
     }
 
     .loader div {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border: 4px solid rgba(255, 255, 255, 0.3);
       border-top-color: #fff;
       border-radius: 50%;
@@ -169,31 +148,53 @@
     }
 
     @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
+      to { transform: rotate(360deg); }
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      .match-title { font-size: 1.2em; }
+      .match-status { font-size: 0.9em; padding: 6px 10px; }
+      .header-box h1 { font-size: 1.6em; }
+    }
+
+    @media (max-width: 480px) {
+      .match-title { font-size: 1.1em; }
+      .match-status { font-size: 0.85em; padding: 5px 8px; }
+      .header-box h1 { font-size: 1.4em; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Glowing Header -->
     <div class="header-box">
-      <h1>FanCode Live by @crictos99</h1>
+      <h1>SonyLiv Live by @crictos99</h1>
+      <!-- Added "Join our Telegram" link -->
+      <a href="https://t.me/crictos99" class="telegram-box" target="_blank">Join our Telegram</a>
     </div>
-
-    <!-- Telegram Button -->
-    <div class="telegram-box">
-      <a href="https://t.me/crictos99" class="telegram-button" target="_blank">Join Our Telegram</a>
-    </div>
-
-    <!-- Loader and Matches Grid -->
     <div id="loader" class="loader"><div></div></div>
     <div id="matches" class="matches-grid" style="display: none;"></div>
   </div>
 
   <script>
-    const apiUrl = "https://raw.githubusercontent.com/abid58b/FanCodePlaylist/refs/heads/main/fancode.json";
+    // Disable right-click context menu
+    document.addEventListener('contextmenu', (event) => {
+      event.preventDefault();
+    });
+
+    // Disable F12, Ctrl+Shift+I, and other developer tools shortcuts
+    document.addEventListener('keydown', (event) => {
+      if (
+        (event.key === 'F12') || // F12
+        (event.ctrlKey && event.shiftKey && event.key === 'I') || // Ctrl+Shift+I
+        (event.ctrlKey && event.shiftKey && event.key === 'J') || // Ctrl+Shift+J
+        (event.ctrlKey && event.key === 'U') // Ctrl+U (View Source)
+      ) {
+        event.preventDefault();
+      }
+    });
+
+    const apiUrl = "https://raw.githubusercontent.com/abid58b/SonyLivPlayList/refs/heads/main/sonyliv.json";
 
     async function fetchMatches() {
       try {
@@ -201,27 +202,40 @@
         document.getElementById("matches").style.display = "none";
 
         const response = await fetch(apiUrl);
-        const data = await response.json();
-        const matches = data.matches;
-        const matchesContainer = document.getElementById("matches");
+        if (!response.ok) throw new Error("Failed to fetch data");
 
+        const data = await response.json();
+        console.log("Fetched Data:", data);
+
+        if (!data.matches || !Array.isArray(data.matches)) {
+          console.error("Expected 'matches' array but got:", data);
+          return;
+        }
+
+        const matchesContainer = document.getElementById("matches");
         matchesContainer.innerHTML = "";
 
-        matches.forEach((match) => {
+        data.matches.forEach((match) => {
+          if (!match.event_name) return;
+
           const matchCard = document.createElement("div");
           matchCard.className = "match-card";
 
-          let statusClass = match.status.toLowerCase() === "live" ? "live" : "upcoming";
+          let statusClass = match.isLive ? "live" : "upcoming";
+          let videoUrl = `player.html?id=${encodeURIComponent(match.contentId)}`;
+
+          // Extract teams from event_name (removes "Upcoming -" and other extra text)
+          let eventName = match.event_name.replace(/^Upcoming - /, "").split(" - ")[0];
 
           matchCard.innerHTML = `
-            <a href="https://shz.al/xFc7.html/?videoUrl=${encodeURIComponent(match.adfree_url)}" target="_blank">
+            <a href="${videoUrl}" target="_blank">
               <div class="logo-box">
-                <img src="${match.src}" alt="${match.title}">
+                <img src="${match.src || 'default.jpg'}" alt="${eventName}">
               </div>
               <div class="match-details">
-                <div class="match-title">${match.title}</div>
-                <div class="match-status ${statusClass}">${match.status}</div>
-                <div class="match-time">${match.startTime}</div>
+                <div class="match-title">${eventName}</div>
+                <div class="match-status ${statusClass}">${match.isLive ? "Live" : "Upcoming"}</div>
+                <div class="match-time">${match.broadcast_channel || "TBD"}</div>
               </div>
             </a>
           `;
@@ -237,7 +251,7 @@
       }
     }
 
-    setInterval(fetchMatches, 200000);
+    setInterval(fetchMatches, 30000);
     fetchMatches();
   </script>
 </body>
