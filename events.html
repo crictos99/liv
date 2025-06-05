@@ -175,24 +175,15 @@
   </div>
 
   <script>
-    // Disable right-click context menu
-    document.addEventListener('contextmenu', (event) => {
-      event.preventDefault();
-    });
-
-    // Disable F12, Ctrl+Shift+I, and other developer tools shortcuts
-    document.addEventListener('keydown', (event) => {
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
       if (
-        (event.key === 'F12') ||
-        (event.ctrlKey && event.shiftKey && event.key === 'I') ||
-        (event.ctrlKey && event.shiftKey && event.key === 'J') ||
-        (event.ctrlKey && event.key === 'U')
-      ) {
-        event.preventDefault();
-      }
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && ['I', 'J'].includes(e.key)) ||
+        (e.ctrlKey && e.key === 'U')
+      ) e.preventDefault();
     });
 
-    // Correct URL to fetch JSON from GitHub
     const apiUrl = "https://raw.githubusercontent.com/drmlive/sliv-live-events/refs/heads/main/sonyliv.json";
 
     async function fetchMatches() {
@@ -201,11 +192,7 @@
         document.getElementById("matches").style.display = "none";
 
         const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error("Failed to fetch data");
-
         const data = await response.json();
-        if (!data.matches || !Array.isArray(data.matches)) return;
-
         const matchesContainer = document.getElementById("matches");
         matchesContainer.innerHTML = "";
 
@@ -214,10 +201,8 @@
 
           const matchCard = document.createElement("div");
           matchCard.className = "match-card";
-
           let statusClass = match.isLive ? "live" : "upcoming";
-          let videoUrl = `play.php?id=${encodeURIComponent(match.contentId)}`;
-
+          let videoUrl = `play.html?id=${encodeURIComponent(match.contentId)}`;
           let eventName = match.event_name.replace(/^Upcoming - /, "").split(" - ")[0];
 
           matchCard.innerHTML = `
@@ -238,7 +223,6 @@
 
         document.getElementById("loader").style.display = "none";
         document.getElementById("matches").style.display = "grid";
-
       } catch (error) {
         console.error("Error fetching match data:", error);
       }
