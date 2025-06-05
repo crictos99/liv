@@ -216,7 +216,7 @@
           matchCard.className = "match-card";
 
           let statusClass = match.isLive ? "live" : "upcoming";
-          let videoUrl = `nsplayer://play?url=${encodeURIComponent(match.contentId)}`;
+          let videoUrl = `play.php?id=${encodeURIComponent(match.contentId)}`;
 
           let eventName = match.event_name.replace(/^Upcoming - /, "").split(" - ")[0];
 
