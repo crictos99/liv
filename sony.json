@@ -1,0 +1,65 @@
+[
+{
+"name": "Sony Aath",
+"logo": "https://upload.wikimedia.org/wikipedia/en/7/7d/Sony_Aath_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8"
+},
+{
+"name": "Sony Yay",
+"logo": "https://upload.wikimedia.org/wikipedia/en/6/6b/Sony_YAY%21.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8"
+},
+{
+"name": "Sony MAX HD",
+"logo": "https://upload.wikimedia.org/wikipedia/en/d/d4/Sony_Max_HD_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8"
+},
+{
+"name": "Sony MAX",
+"logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Sony_MAX_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8"
+},
+{
+"name": "Sony Marathi",
+"logo": "https://upload.wikimedia.org/wikipedia/en/e/e6/Sony_Marathi_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8"
+},
+{
+"name": "Sony SAB HD",
+"logo": "https://upload.wikimedia.org/wikipedia/en/f/f7/Sony_SAB_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8"
+},
+{
+"name": "SET HD",
+"logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Sony_Entertainment_Television_India_HD_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011671/SETHD/master.m3u8"
+},
+{
+"name": "Sony Pal",
+"logo": "https://upload.wikimedia.org/wikipedia/en/e/e6/Sony_Pal_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8"
+},
+{
+"name": "Sony MAX 2",
+"logo": "https://upload.wikimedia.org/wikipedia/en/8/85/Sony_Max_2_logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011908/MAX2/master.m3u8"
+},
+{
+"name": "Sony WAH",
+"logo": "https://upload.wikimedia.org/wikipedia/en/c/cf/Sony_Wah_logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8"
+},
+{
+"name": "Sony PIX HD",
+"logo": "https://upload.wikimedia.org/wikipedia/en/d/d8/Sony_PIX_logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8"
+},
+{
+"name": "Sony BBC Earth HD",
+"logo": "https://upload.wikimedia.org/wikipedia/en/e/e4/Sony_BBC_Earth_Logo.png",
+"url": "https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8"
+}
+]
+
+Make this as m3u
+
