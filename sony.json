@@ -1,61 +1,62 @@
-      {
-        name: "Sony Aath",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_aath.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8"
-      },
-      {
-        name: "Sony Yay",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8"
-      },
-      {
-        name: "Sony MAX HD",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8"
-      },
-      {
-        name: "Sony MAX",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8"
-      },
-      {
-        name: "Sony Marathi",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Marathi_SD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8"
-      },
-      {
-        name: "Sony SAB HD",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8"
-      },
-      {
-        name: "SET HD",
-        logo: "https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011671/SETHD/master.m3u8"
-      },
-      {
-        name: "Sony Pal",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8"
-      },
-      {
-        name: "Sony MAX 2",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011908/MAX2/master.m3u8"
-      },
-      {
-        name: "Sony WAH",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Wah.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8"
-      },
-      {
-        name: "Sony PIX HD",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8"
-      },
-      {
-        name: "Sony BBC Earth HD",
-        logo: "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png",
-        url: "https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8"
-      }
-     ]
+[
+  {
+    "name": "Sony Aath",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_aath.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8"
+  },
+  {
+    "name": "Sony Yay",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8"
+  },
+  {
+    "name": "Sony MAX HD",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8"
+  },
+  {
+    "name": "Sony MAX",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8"
+  },
+  {
+    "name": "Sony Marathi",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Marathi_SD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8"
+  },
+  {
+    "name": "Sony SAB HD",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8"
+  },
+  {
+    "name": "SET HD",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011671/SETHD/master.m3u8"
+  },
+  {
+    "name": "Sony Pal",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8"
+  },
+  {
+    "name": "Sony MAX 2",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011908/MAX2/master.m3u8"
+  },
+  {
+    "name": "Sony WAH",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Wah.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8"
+  },
+  {
+    "name": "Sony PIX HD",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8"
+  },
+  {
+    "name": "Sony BBC Earth HD",
+    "logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png",
+    "url": "https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8"
+  }
+]
