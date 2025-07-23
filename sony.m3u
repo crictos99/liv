@@ -1,37 +1,67 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_aath.png", Sony Aath
-https://tataplay.slivcdn.com/hls/live/2011641/SonyAathSD/master.m3u8
-
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png", Sony Yay
-https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8
-
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png", Sony MAX HD
-https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8
-
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png", Sony MAX
-https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8
-
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Marathi_SD.png", Sony Marathi
-https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8
-
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png", Sony SAB HD
-https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png", SET HD
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sethd_23oct_masthead_logo_rev.png",SET HD
 https://tataplay.slivcdn.com/hls/live/2011671/SETHD/master.m3u8
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png", Sony Pal
-https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_sabhd_23oct_masthead_logo.png",Sony SAB HD
+https://tataplay.slivcdn.com/hls/live/2011749-b/SABHD/master_3500.m3u8
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_MAX2.png", Sony MAX 2
-https://tataplay.slivcdn.com/hls/live/2011908/MAX2/master.m3u8
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_pal_23oct_masthead_logo.png",Sony PAL
+https://tataplay.slivcdn.com/hls/live/2011741-b/SonyPalSD/master_3500.m3u8
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Wah.png", Sony WAH
-https://tataplay.slivcdn.com/hls/live/2011906/SonyWah/master.m3u8
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_maxhd_23oct_masthead_logo.png",Sony Max HD
+https://tataplay.slivcdn.com/hls/live/2011670-b/SonyMaxhd/master_3500.m3u8
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pix_HD.png", Sony PIX HD
-https://tataplay.slivcdn.com/hls/live/2011748/PIXHD/master.m3u8
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_max_23oct_masthead_logo.png",Sony Max
+https://tataplay.slivcdn.com/hls/live/2011745-b/SonyMaxSD/master_3500.m3u8
 
-#EXTINF:-1 tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png", Sony BBC Earth HD
-https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_max2_23oct_masthead_logo.png",Sony Max 2
+https://tataplay.slivcdn.com/hls/live/2011908-b/MAX2/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_wah_23oct_masthead_logo.png",Sony Wah
+https://tataplay.slivcdn.com/hls/live/2011906-b/SonyWah/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_pixhd_23oct_masthead_logo.png",Sony Pix HD
+https://tataplay.slivcdn.com/hls/live/2011748-b/PIXHD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN1HD_23oct_masthead_logo.png",Sony Sports Ten 1 HD
+https://tataplay.slivcdn.com/hls/live/2011747-b/TEN1HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN1_23oct_masthead_logo.png",Sony Sports Ten 1
+https://tataplay.slivcdn.com/hls/live/2011739-b/TEN1SD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN2HD_23oct_masthead_logo.png",Sony Sports Ten 2 HD
+https://tataplay.slivcdn.com/hls/live/2020434-b/TEN2HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN2_23oct_masthead_logo.png",Sony Sports Ten 2
+https://tataplay.slivcdn.com/hls/live/2020590-b/TEN2SD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN3HD_23oct_masthead_logo.png",Sony Sports Ten 3 HD
+https://tataplay.slivcdn.com/hls/live/2020591-b/TEN3HD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN3_23oct_masthead_logo.png",Sony Sports Ten 3
+https://tataplay.slivcdn.com/hls/live/2020592-b/TEN3SD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN4HD_23oct_masthead_logo.png",Sony Sports Ten 4 HD
+https://tataplay.slivcdn.com/hls/live/2020589-b/ten4hd/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN4_23oct_masthead_logo.png",Sony Sports Ten 4
+https://tataplay.slivcdn.com/hls/live/2020437-b/ten4sd/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN5HD_23oct_masthead_logo.png",Sony Sports Ten 5 HD
+https://tataplay.slivcdn.com/hls/live/2020593-b/SONYSIXHD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/masthead_logo/Sony_TEN5_23oct_masthead_logo.png",Sony Sports Ten 5
+https://tataplay.slivcdn.com/hls/live/2020594-b/SONYSIXSD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_bbchd_23oct_masthead_logo.png",Sony BBC Earth HD
+https://tataplay.slivcdn.com/hls/live/2011907-b/SonyBBCEarthHD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_yay_23oct_masthead_logo.png",Sony YAY
+https://tataplay.slivcdn.com/hls/live/2011746-b/SonyYaySD/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_marathi_23oct_masthead_logo.png",Sony Marathi
+https://tataplay.slivcdn.com/hls/live/2011740-b/SonyMarathi/master_3500.m3u8
+
+#EXTINF:-1 tvg-logo="https://origin-staticv2.sonyliv.com/videoasset_images/sony_aath_23oct_masthead_logo.png",Sony AATH
+https://tataplay.slivcdn.com/hls/live/2011641-b/SonyAathSD/master_3500.m3u8
